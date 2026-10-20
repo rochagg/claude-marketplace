@@ -123,6 +123,19 @@
       "skills": [
         "./image-to-code"
       ]
+    },
+    {
+      "name": "playwright-cli",
+      "description": "Skill oficial da Microsoft: automatiza o navegador pelo terminal (abrir páginas, clicar, preencher, screenshots, gravar e gerar testes Playwright). Requer `npm i -g @playwright/cli`. Repositório microsoft/playwright-cli (Apache-2.0).",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/microsoft/playwright-cli.git",
+        "path": "skills"
+      },
+      "strict": false,
+      "skills": [
+        "./playwright-cli"
+      ]
     }
   ]
 }
