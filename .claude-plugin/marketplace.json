@@ -1,0 +1,55 @@
+{
+  "name": "rochagg-marketplace",
+  "owner": {
+    "name": "rochagg"
+  },
+  "metadata": {
+    "description": "Marketplace pessoal de plugins do Gabriel para o Claude"
+  },
+  "plugins": [
+    {
+      "name": "runcomfy-media",
+      "description": "Skills de mídia com IA da RunComfy (imagem, vídeo, áudio, lipsync, face swap). Requer a CLI @runcomfy/cli e conta RunComfy.",
+      "source": {
+        "source": "github",
+        "repo": "gencraft-labs/skills"
+      },
+      "strict": false,
+      "skills": [
+        "./ace-step",
+        "./ai-avatar-video",
+        "./ai-image-generation",
+        "./ai-music",
+        "./ai-video-generation",
+        "./codex-pet",
+        "./controlnet-pose",
+        "./elevenlabs-music-generation",
+        "./face-swap",
+        "./flux-2-klein",
+        "./flux-kontext",
+        "./gpt-image-2",
+        "./gpt-image-edit",
+        "./happyhorse-1-0",
+        "./image-edit",
+        "./image-inpainting",
+        "./image-outpainting",
+        "./image-to-video",
+        "./kling-3-0",
+        "./lipsync",
+        "./nano-banana-2",
+        "./nano-banana-edit",
+        "./relight",
+        "./runcomfy-cli",
+        "./seedance-2-5-image-to-video",
+        "./seedance-2-5-reference-to-video",
+        "./seedance-v2",
+        "./video-edit",
+        "./video-extend",
+        "./video-inpainting",
+        "./video-outpainting",
+        "./wan-2-7",
+        "./wan-3-0-prime-reference-to-video"
+      ]
+    }
+  ]
+}
