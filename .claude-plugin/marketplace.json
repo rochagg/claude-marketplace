@@ -20,13 +20,14 @@
       "name": "frontend-design-kit",
       "description": "Skills oficiais da Anthropic para design: frontend-design (páginas sofisticadas) e theme-factory (temas visuais consistentes).",
       "source": {
-        "source": "github",
-        "repo": "anthropics/skills"
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/skills.git",
+        "path": "skills"
       },
       "strict": false,
       "skills": [
-        "./skills/frontend-design",
-        "./skills/theme-factory"
+        "./frontend-design",
+        "./theme-factory"
       ]
     },
     {
