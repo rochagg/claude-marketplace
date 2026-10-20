@@ -1,0 +1,12 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Capa 1: foto sangrada + título condensado em caixa alta. Troque o .ph por <img class="full-bleed" src="..."> -->
+<div class="slide dark" style="justify-content:flex-end;padding-bottom:80px">
+  <div class="ph full-bleed" style="border:none;opacity:1;background:#2a2d3a;color:#8a8ea0;font-size:30px;align-items:flex-start;padding-top:260px">FOTO: retrato com expressão forte, olhando para a câmera, fundo de cor sólida</div>
+  <div class="shade"></div>
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <div style="position:relative;text-align:center">
+    <div class="handle-pill" style="margin-bottom:26px"><span class="av"></span>{{HANDLE}}</div>
+    <h1 class="cover-title">A Reforma Tributária<br>e o fim do Simples<br><span class="hl">como você conhece</span></h1>
+    <p class="cover-sub" style="color:#fff;margin-top:30px">Por que faturar mais pode<br>virar um péssimo negócio</p>
+  </div>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

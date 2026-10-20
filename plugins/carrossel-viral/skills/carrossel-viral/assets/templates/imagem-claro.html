@@ -1,0 +1,14 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Slide de quebra de crença: título + imagem + lista de mitos com ✕. Também serve com <ol class="num-list"> para listas numeradas. -->
+<div class="slide light">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="h1">O que <span class="hl">morreu</span><br>em 2026?</h1>
+  <div class="ph" style="height:400px;margin:40px 0 46px">FOTO: mãos usando celular/notebook, luz natural</div>
+  <ul class="x-list small">
+    <li>"Simples Nacional é sempre mais barato"</li>
+    <li>"Nota fiscal é só burocracia"</li>
+    <li>"Pró-labore baixo economiza imposto"</li>
+    <li>"Contador só serve para guia"</li>
+  </ul>
+  <p class="small muted" style="margin-top:36px">Esses mitos vão deixar muita empresa pagando mais enquanto as regras mudam.</p>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

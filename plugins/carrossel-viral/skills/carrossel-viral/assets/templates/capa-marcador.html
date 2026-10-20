@@ -1,0 +1,7 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Capa 3: texto em caixas de marcador sobre fundo claro + meme/imagem pop embaixo. -->
+<div class="slide light" style="padding-top:120px">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="marker"><span>O guia definitivo para</span><br><span>organizar as finanças</span><br><span>da empresa <b class="hl">(a morte da planilha)</b></span></h1>
+  <div class="ph" style="flex:1;margin-top:40px">IMAGEM: meme ou personagem de cultura pop reagindo, segurando um "guia"</div>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Slide 3: de onde vem a informação. Prova de fonte + frase de fecho em destaque. -->
+<div class="slide dark">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="h1">De onde vem<br>essa informação?</h1>
+  <div class="rule"></div>
+  <div class="spacer"></div>
+  <p class="body">Texto oficial da lei, simulações com <span class="hl">[N] empresas</span> da nossa carteira e as últimas orientações publicadas pelos órgãos oficiais.</p>
+  <p class="body" style="margin-top:44px;color:var(--butter)">Nada de achismo. Só o que está acontecendo agora.</p>
+  <div style="height:70px"></div>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

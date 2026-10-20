@@ -1,0 +1,14 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Entrega técnica: termos nomeados em negrito + frase final em destaque secundário. -->
+<div class="slide dark">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="h1"><span class="hl2">As Novas</span><br><span class="hl2">Métricas</span> de Ouro.</h1>
+  <div class="ph" style="height:400px;margin:40px 0 50px">FOTO: retrato fechado, roupa de cor quente sobre fundo quente</div>
+  <p class="small label" style="margin-bottom:26px">O que separa empresa lucrativa agora:</p>
+  <ul class="arrows small">
+    <li><b>Margem Pós-Imposto:</b> quanto sobra de cada R$ 100 vendidos.</li>
+    <li><b>Crédito Recuperável:</b> o imposto que volta para o seu caixa.</li>
+    <li><b>Preço Defensável:</b> quanto você repassa sem perder cliente.</li>
+  </ul>
+  <p class="small" style="margin-top:34px">E o principal: <span class="hl2">não importa quanto você fatura, importa quanto fica.</span></p>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

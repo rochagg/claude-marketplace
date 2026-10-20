@@ -1,0 +1,16 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Slide 2: armadilha de retenção. Afirma a mudança e lista o que vai mudar. -->
+<div class="slide light">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h2 class="h2">A Receita <span class="hl">mudou as regras</span> sem avisar ninguém.</h2>
+  <div class="rule"></div>
+  <p class="body">Não houve campanha, mas os números de quem fecha balanço todo mês mostram uma mudança drástica. Essa atualização impacta diretamente:</p>
+  <div class="spacer"></div>
+  <p class="small label" style="margin-bottom:22px">O que muda:</p>
+  <ul class="arrows small">
+    <li>Quanto imposto sobra no fim do mês.</li>
+    <li>O preço que você consegue cobrar.</li>
+    <li>Sua margem em cada venda.</li>
+  </ul>
+  <div style="height:40px"></div>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

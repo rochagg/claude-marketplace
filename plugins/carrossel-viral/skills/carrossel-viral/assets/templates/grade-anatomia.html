@@ -1,0 +1,17 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Gatilho de salvamento: grade de 8 miniaturas + framework em setas. -->
+<div class="slide dark">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="h1">A Anatomia do<br>Fechamento Lucrativo:</h1>
+  <div class="grid4" style="margin:44px 0 50px">
+    <div class="ph">1</div><div class="ph">2</div><div class="ph">3</div><div class="ph">4</div>
+    <div class="ph">5</div><div class="ph">6</div><div class="ph">7</div><div class="ph">8</div>
+  </div>
+  <ul class="arrows small" style="font-size:33px">
+    <li><span class="hl2">Etapa 1:</span> Separar conta PF e PJ.</li>
+    <li><span class="hl2">Etapas 2-3:</span> Revisar o regime tributário.</li>
+    <li><span class="hl2">Etapas 4-6:</span> Precificar com o imposto novo.</li>
+    <li><span class="hl2">Etapas 7-8:</span> Recuperar créditos.</li>
+    <li><span class="hl2">Final:</span> Planejar o ano seguinte.</li>
+  </ul>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>

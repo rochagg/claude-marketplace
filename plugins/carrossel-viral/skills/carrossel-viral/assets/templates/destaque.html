@@ -1,0 +1,13 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head><body>
+<!-- Prova/case em fundo da cor de marca: print ou cartão branco + conclusão sublinhada. -->
+<div class="slide accent-bg">
+  <header class="top"><span>{{TAG}}</span><span>{{HANDLE}}</span><span>{{DATA}} ®</span></header>
+  <h1 class="h1">A Vantagem da<br>Empresa Pequena.</h1>
+  <div style="background:#fff;color:var(--ink);border-radius:8px;margin:46px 0;padding:40px;box-shadow:0 20px 50px rgba(0,0,0,.18)">
+    <div class="ph" style="height:250px;border-color:#bbb;color:#888">PRINT/CASE real (com autorização) ou cartão com o exemplo</div>
+  </div>
+  <div class="spacer"></div>
+  <p class="small"><span class="u">Os números mostraram que:</span> uma empresa com 3 sócios e margem alta pagou menos que uma com o dobro de faturamento e margem baixa.</p>
+  <p class="small u" style="margin-top:34px">O segredo: margem virou a nova moeda. Faturamento perdeu poder.</p>
+  <div style="height:30px"></div>
+<div class="dots" data-i="{{I}}" data-n="{{N}}"></div></div><script>document.querySelectorAll(".dots").forEach(d=>{const n=+d.dataset.n||10,i=+d.dataset.i||1;d.innerHTML=Array.from({length:n},(_,k)=>`<i class="${k+1===i?"on":""}"></i>`).join("")})</script></body></html>
