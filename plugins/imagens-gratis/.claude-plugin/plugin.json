@@ -1,0 +1,9 @@
+{
+  "name": "imagens-gratis",
+  "description": "Busca e baixa fotos e vídeos gratuitos com licença de uso comercial (Pexels, Pixabay, Unsplash, Openverse, Wikimedia Commons) para carrosséis, posts, anúncios, sites e vídeos, com créditos registrados.",
+  "version": "1.0.0",
+  "author": {
+    "name": "rochagg"
+  },
+  "license": "MIT"
+}

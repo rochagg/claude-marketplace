@@ -62,6 +62,8 @@ Objetivo: visual de escritório de alto padrão, editorial e limpo. Evite clich�
 
 **Tipografia** (Google Fonts): títulos em serifa (Cormorant Garamond, Playfair Display ou Libre Caslon Display) e texto em sans (Inter, Manrope ou DM Sans). Título 72–96 px, texto 34–42 px, rodapé 22–26 px. No máximo 2 famílias. Em números ("01/10", prazos, valores), use `font-variant-numeric: lining-nums tabular-nums` para as serifas não exibirem algarismos de estilo antigo.
 
+**Cores e fontes do projeto primeiro**: use a identidade visual do escritório (arquivos de marca, CSS do site, logo ou posts publicados; se nada existir, pergunte). As paletas abaixo são só para escritórios sem identidade definida, e mesmo assim confirme a escolha com o usuário.
+
 **Paletas sugeridas** (contraste mínimo 4.5:1 no texto):
 - Clássico: azul-marinho `#0F1E33`, dourado `#C8A45D`, off-white `#F5F1E8`.
 - Contemporâneo: grafite `#1C1C1E`, bronze `#A97A4A`, areia `#EDE6DA`.
@@ -69,6 +71,8 @@ Objetivo: visual de escritório de alto padrão, editorial e limpo. Evite clich�
 - Institucional: bordô `#5A1A24`, cinza-pérola `#E7E3DD`, preto suave `#151515`.
 
 **Elementos recorrentes**: numeração "01/10" discreta, logo pequeno, barra fina de destaque na cor de acento, ícones lineares simples (SVG inline), destaque de palavras-chave na cor de acento. A capa pode inverter as cores (fundo escuro) para se destacar no feed. Todos os slides seguem o mesmo sistema, para o carrossel parecer uma peça única.
+
+**Imagens**: não entregue slide com espaço vazio. Se faltar foto (escritório, cidade, cena do tema), busque em bancos gratuitos com licença comercial seguindo a skill `imagens-gratis` e registre os créditos. Nada de imagem que sugira resultado, ostentação ou cliente identificável.
 
 Se as skills `theme-factory`, `frontend-design`, `banner-design` ou `ui-ux-pro-max` estiverem disponíveis, use-as para refinar paleta, tipografia e composição.
 

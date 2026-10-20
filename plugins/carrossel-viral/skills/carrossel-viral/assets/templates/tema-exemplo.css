@@ -1,0 +1,20 @@
+/* Tema do projeto: copie para a pasta slides/ como tema.css e preencha com a
+   identidade visual do projeto (ver "Identidade visual" no SKILL.md).
+   Os valores abaixo são só um exemplo de formato, não uma paleta padrão. */
+:root {
+  --accent: #1d4ed8;      /* cor principal da marca: destaque, fundo do slide de case, ✕ */
+  --on-accent: #ffffff;   /* texto legível sobre --accent */
+  --butter: #bfdbfe;      /* 2ª cor da marca (ou tom claro da principal) para destaque no fundo escuro */
+  --ink: #0b1220;         /* fundo escuro: cor escura da marca ou quase-preto puxado para ela */
+  --paper: #f4f6fa;       /* fundo claro: branco/off-white da marca */
+  --muted-light: #5b6475; /* texto de apoio no fundo claro */
+  --muted-dark: #9aa3b5;  /* texto de apoio no fundo escuro */
+  /* Opcional: se --accent não tiver contraste como texto (ex.: amarelo no claro), defina: */
+  /* --hl-light: #8a6d00;  destaque de texto no fundo claro */
+  /* --hl-dark: #ffd400;   destaque de texto no fundo escuro */
+  /* --img-filter: grayscale(1);  unifica as fotos em marcas monocromáticas */
+  /* Fontes da marca (carregue com @import no topo deste arquivo, se forem do Google Fonts): */
+  /* --sans: 'Fonte da Marca', 'Inter Tight', Arial, sans-serif; */
+  /* --display: 'Fonte Condensada', 'Anton', Impact, sans-serif; */
+  /* --serif: 'Serifa da Marca', 'Instrument Serif', Georgia, serif; */
+}

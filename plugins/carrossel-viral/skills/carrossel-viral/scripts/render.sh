@@ -7,6 +7,7 @@ SLIDES_DIR="${1:?uso: render.sh <pasta-slides> [largura] [altura]}"
 W="${2:-1080}"
 H="${3:-1350}"
 SLIDES_DIR="$(cd "$SLIDES_DIR" && pwd)"
+[ -f "$SLIDES_DIR/tema.css" ] || { echo "Falta $SLIDES_DIR/tema.css com a paleta do projeto (modelo: assets/templates/tema-exemplo.css)." >&2; exit 1; }
 OUT_DIR="$(dirname "$SLIDES_DIR")"
 PNG_DIR="$OUT_DIR/png"
 mkdir -p "$PNG_DIR"

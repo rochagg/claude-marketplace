@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap');
 
-/* Tokens: troque aqui para adaptar à marca do usuário. */
+/* Valores neutros de segurança. NÃO edite aqui: as cores e fontes da marca
+   vêm do tema.css de cada projeto (modelo em tema-exemplo.css), carregado
+   depois deste arquivo. O render.sh recusa renderizar sem tema.css. */
 :root {
-  --accent: #ff3d0f;      /* destaque principal (vermelho-laranja) */
-  --butter: #f3efb4;      /* destaque secundário sobre fundo escuro */
-  --ink: #0b0b12;         /* fundo escuro / texto no claro */
-  --paper: #f1f1ef;       /* fundo claro */
+  --accent: #555555;      /* destaque principal da marca */
+  --butter: #dddddd;      /* destaque secundário sobre fundo escuro */
+  --ink: #111111;         /* fundo escuro / texto no claro */
+  --paper: #f2f2f2;       /* fundo claro */
   --muted-light: #6d6d72; /* texto de apoio no claro */
   --muted-dark: #a3a3ab;  /* texto de apoio no escuro */
+  --on-accent: #ffffff;   /* texto sobre a cor de destaque */
   --sans: 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
   --display: 'Anton', 'Impact', 'Arial Narrow', sans-serif;
   --serif: 'Instrument Serif', Georgia, serif;
@@ -25,7 +28,7 @@ body { font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 }
 .light { background: var(--paper); color: var(--ink); }
 .dark { background: var(--ink); color: #f4f4f6; }
-.accent-bg { background: var(--accent); color: #fff; }
+.accent-bg { background: var(--accent); color: var(--on-accent); }
 
 /* Cabeçalho fino de "revista": tag à esquerda, @ no centro, edição à direita. */
 .top {
@@ -48,7 +51,8 @@ body { font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 .small { font-size: 31px; line-height: 1.3; }
 .rule { height: 2px; background: currentColor; opacity: .14; margin: 34px 0; }
 .label { text-decoration: underline; text-underline-offset: 8px; text-decoration-thickness: 2px; font-weight: 500; }
-.hl { color: var(--accent); }
+.hl { color: var(--hl-light, var(--accent)); }
+.dark .hl, .accent-bg .hl { color: var(--hl-dark, var(--accent)); }
 .dark .hl2, .hl2 { color: var(--butter); }
 .muted { color: var(--muted-light); }
 .dark .muted { color: var(--muted-dark); }
@@ -65,6 +69,7 @@ b, strong { font-weight: 800; }
 
 /* Imagens */
 .img { width: 100%; border-radius: 6px; object-fit: cover; display: block; }
+.img, .full-bleed, .grid4 img { filter: var(--img-filter, none); } /* ex.: grayscale(1) em marcas monocromáticas */
 .ph {
   width: 100%; border-radius: 6px; display: flex; align-items: center; justify-content: center;
   text-align: center; padding: 30px; font-size: 26px; border: 3px dashed currentColor; opacity: .55;
@@ -84,12 +89,13 @@ b, strong { font-weight: 800; }
 
 /* Capa editorial: serifa */
 .serif-title { font-family: var(--serif); font-size: 96px; line-height: 1.0; letter-spacing: -0.01em; color: #fff; }
-.serif-title em { color: var(--accent); }
+.serif-title em { color: var(--hl-dark, var(--accent)); }
 
 /* Capa marcador: caixas pretas atrás do texto */
 .marker { font-size: 66px; font-weight: 600; line-height: 1.32; letter-spacing: -0.03em; }
 .marker span { background: var(--ink); color: #fff; padding: 2px 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-.marker .hl { color: var(--accent); }
+.marker .hl { color: var(--hl-light, var(--accent)); }
+.dark .hl, .accent-bg .hl { color: var(--hl-dark, var(--accent)); }
 
 /* Pílula de CTA */
 .pill { display: inline-block; border: 3px solid currentColor; border-radius: 999px; padding: 18px 34px; font-size: 32px; font-weight: 500; }

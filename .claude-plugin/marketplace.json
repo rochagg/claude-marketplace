@@ -100,6 +100,11 @@
       "name": "carrossel-viral",
       "description": "Skill própria: carrosséis de Instagram no método editorial de alta retenção (capa de quebra de padrão, entrega técnica, gatilhos de salvamento e CTA por palavra-chave), para qualquer nicho, com exportação em PNG/PDF.",
       "source": "./plugins/carrossel-viral"
+    },
+    {
+      "name": "imagens-gratis",
+      "description": "Skill própria: busca e baixa fotos e vídeos gratuitos com licença comercial (Pexels, Unsplash, Pixabay, Openverse, Wikimedia) para qualquer criativo, com créditos registrados.",
+      "source": "./plugins/imagens-gratis"
     }
   ]
 }
