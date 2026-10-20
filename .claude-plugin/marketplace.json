@@ -50,6 +50,23 @@
         "./wan-2-7",
         "./wan-3-0-prime-reference-to-video"
       ]
+    },
+    {
+      "name": "vercel-agent-skills",
+      "description": "Skills oficiais da Vercel: deploy, React/Next.js, design de interfaces e escrita.",
+      "source": {
+        "source": "github",
+        "repo": "vercel-labs/agent-skills"
+      },
+      "strict": false
+    },
+    {
+      "name": "inference-sh",
+      "description": "Skills oficiais da inference.sh (imagem, vídeo, áudio, LLMs, marketing). Requer a CLI belt e conta inference.sh.",
+      "source": {
+        "source": "github",
+        "repo": "inference-sh/skills"
+      }
     }
   ]
 }
