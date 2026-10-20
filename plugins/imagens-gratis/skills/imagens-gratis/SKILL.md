@@ -35,6 +35,10 @@ Depois **olhe os candidatos** (leia as imagens) e escolha pelo critério: foco n
 - Licenças CC BY e CC BY-SA (Openverse, Wikimedia) **exigem crédito**: coloque "Foto: Autor / Fonte (licença)" na legenda do post ou em letra pequena no slide. Pexels, Unsplash e Pixabay não exigem, mas o crédito é recomendado.
 - Ao entregar, liste as imagens usadas com autor e licença (de `creditos.json`).
 
+## Onde salvar
+
+Baixe as imagens dentro da pasta do criativo, no projeto do cliente (`<pasta-do-projeto>/criativos/AAAA-MM-DD-<tipo>-<tema>/slides/img/` ou equivalente), nunca em pasta temporária ou solta na Mesa. Se não souber qual é a pasta do projeto, procure pelo nome do cliente ou pergunte.
+
 ## Fontes
 
 | Fonte | Tem | Chave | Observação |

@@ -78,7 +78,7 @@ Se as skills `theme-factory`, `frontend-design`, `banner-design` ou `ui-ux-pro-m
 
 ## 5. Produção
 
-Crie uma pasta `carrossel-<tema>/` com um arquivo HTML por slide: `slides/slide-01.html`, `slides/slide-02.html`… Cada arquivo tem o `body` com o tamanho exato do formato (ex.: `width:1080px;height:1350px;margin:0;overflow:hidden`), CSS e SVG inline e fontes via Google Fonts. Coloque o CSS compartilhado no topo de cada arquivo (ou em `slides/style.css`) para manter tudo igual.
+Crie a pasta do criativo dentro do projeto do cliente (ver "Onde salvar": `<projeto>/criativos/AAAA-MM-DD-carrossel-<tema>/`) com um arquivo HTML por slide: `slides/slide-01.html`, `slides/slide-02.html`… Cada arquivo tem o `body` com o tamanho exato do formato (ex.: `width:1080px;height:1350px;margin:0;overflow:hidden`), CSS e SVG inline e fontes via Google Fonts. Coloque o CSS compartilhado no topo de cada arquivo (ou em `slides/style.css`) para manter tudo igual.
 
 **Exportar PNG e PDF (Claude Code, macOS/Linux com Chrome ou Chromium):**
 
@@ -89,6 +89,14 @@ bash "<pasta desta skill>/scripts/render.sh" carrossel-<tema>/slides 1080 1350
 O script gera `png/slide-XX.png` e `carrossel.pdf` (este para o LinkedIn) ao lado da pasta `slides/`. Depois de gerar, **abra os PNGs e confira**: texto cortado, contraste, alinhamento, área segura e consistência. Corrija e gere de novo se precisar.
 
 **No app (sem Chrome local):** gere as imagens com o ambiente de código disponível (por exemplo, Playwright/Chromium em Python, se houver) ou entregue os slides como uma página HTML com um slide por seção no tamanho exato, explicando como exportar.
+
+## Onde salvar (regra fixa)
+
+Todo criativo é salvo **na pasta do projeto/cliente**, nunca solto na Mesa nem em pasta temporária:
+1. Descubra a pasta do projeto: o diretório atual, se for do cliente; senão procure pelo nome do cliente/marca (ex.: Mesa, Documentos) com `mdfind`/`find`. Se houver mais de uma candidata ou nenhuma, pergunte.
+2. Salve em `<pasta-do-projeto>/criativos/AAAA-MM-DD-<tipo>-<tema>/` (ex.: `criativos/2026-10-20-carrossel-reforma-tributaria/`), com `slides/` (fonte editável, incluindo `img/`), `png/`, o PDF e `creditos.txt`.
+3. A identidade visual reutilizável fica em `<pasta-do-projeto>/marca/` (ex.: `marca/tema.css`).
+4. Ao entregar, informe o caminho completo da pasta.
 
 ## 6. Entrega
 

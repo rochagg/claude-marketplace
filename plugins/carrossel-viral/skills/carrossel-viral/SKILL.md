@@ -59,7 +59,7 @@ Mostre o roteiro em texto para aprovação **antes** de desenhar, a não ser que
 
 ## 5. Design, imagens e renderização
 
-1. Crie uma pasta de trabalho (ex.: `carrossel-<tema>/slides/`) e copie para ela `assets/templates/base.css` e o `tema.css` do projeto (seção 2).
+1. Crie a pasta do criativo dentro do projeto (seção "Onde salvar", ex.: `<projeto>/criativos/AAAA-MM-DD-carrossel-<tema>/slides/`) e copie para ela `assets/templates/base.css` e o `tema.css` do projeto (seção 2).
 2. Para cada slide, parta do template correspondente em `assets/templates/` (lista em `design.md`) e salve como `slide-01.html`, `slide-02.html`… Troque `{{HANDLE}}`, `{{TAG}}`, `{{DATA}}` e o conteúdo. A paginação (bolinhas) é marcada pelo índice do slide.
 3. **Imagens: nenhum slide sai com espaço vazio.** Use as fotos do usuário quando houver. Para o resto, siga a skill `imagens-gratis` (se não estiver carregada, use o script dela: `python3 -I <dir-imagens-gratis>/scripts/buscar.py "<cena em inglês>" --saida carrossel-<tema>/slides/img --orientacao vertical --n 6`). Leia os candidatos, escolha os que combinam com a paleta e o assunto e troque cada `.ph` por `<img class="img" src="img/arquivo.jpg" style="height:400px">` (ou `class="full-bleed"` nas capas). Para pessoas famosas em newsjacking, busque no Wikimedia Commons. Registre os créditos na legenda quando a licença exigir.
 4. Renderize:
@@ -72,6 +72,14 @@ Mostre o roteiro em texto para aprovação **antes** de desenhar, a não ser que
 ## 6. Legenda
 
 Estrutura: gancho de 1 linha diferente da capa → 2 ou 3 linhas reforçando a tese → CTA repetido (palavra-chave ou "salva e manda pra quem precisa") → 3 a 5 hashtags de nicho, no máximo.
+
+## Onde salvar (regra fixa)
+
+Todo criativo é salvo **na pasta do projeto/cliente**, nunca solto na Mesa nem em pasta temporária:
+1. Descubra a pasta do projeto: o diretório atual, se for do cliente; senão procure pelo nome do cliente/marca (ex.: Mesa, Documentos) com `mdfind`/`find`. Se houver mais de uma candidata ou nenhuma, pergunte.
+2. Salve em `<pasta-do-projeto>/criativos/AAAA-MM-DD-<tipo>-<tema>/` (ex.: `criativos/2026-10-20-carrossel-reforma-tributaria/`), com `slides/` (fonte editável, incluindo `img/`), `png/`, o PDF e `creditos.txt`.
+3. A identidade visual reutilizável fica em `<pasta-do-projeto>/marca/` (ex.: `marca/tema.css`).
+4. Ao entregar, informe o caminho completo da pasta.
 
 ## 7. Checklist final
 
