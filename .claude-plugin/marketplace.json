@@ -15,6 +15,85 @@
         "repo": "vercel-labs/agent-skills"
       },
       "strict": false
+    },
+    {
+      "name": "frontend-design-kit",
+      "description": "Skills oficiais da Anthropic para design: frontend-design (páginas sofisticadas) e theme-factory (temas visuais consistentes).",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      },
+      "strict": false,
+      "skills": [
+        "./skills/frontend-design",
+        "./skills/theme-factory"
+      ]
+    },
+    {
+      "name": "taste-skill",
+      "description": "Direção de arte premium para landing pages e sites (anti-'cara de IA'), com inspeção visual no navegador.",
+      "source": {
+        "source": "github",
+        "repo": "Leonxlnx/taste-skill"
+      },
+      "strict": false,
+      "skills": [
+        "./skills/taste-skill"
+      ]
+    },
+    {
+      "name": "impeccable",
+      "description": "Polimento e auditoria de design de interfaces (/impeccable polish, audit, critique).",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pbakaus/impeccable.git",
+        "path": "plugin"
+      }
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "description": "Inteligência de UI/UX: estilos, paletas, fontes, banners para redes sociais, marca e design system.",
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    {
+      "name": "hyperframes",
+      "description": "HeyGen HyperFrames: vídeos animados, motion graphics, legendas e Reels a partir de HTML, renderizados localmente.",
+      "source": {
+        "source": "github",
+        "repo": "heygen-com/hyperframes"
+      }
+    },
+    {
+      "name": "remotion",
+      "description": "Remotion: vídeos programáticos com React.",
+      "source": {
+        "source": "github",
+        "repo": "remotion-dev/claude-code-plugin"
+      }
+    },
+    {
+      "name": "marketing-skills",
+      "description": "Corey Haines: copywriting, CRO, psicologia de marketing, lead magnets, anúncios, ofertas, e-mails e social.",
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills"
+      }
+    },
+    {
+      "name": "humanizer",
+      "description": "Reescreve textos com cara de IA para soarem naturais.",
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      }
+    },
+    {
+      "name": "carrossel-juridico",
+      "description": "Skill própria: carrosséis de Instagram/LinkedIn para escritórios de advocacia, conforme o Provimento 205/2021 da OAB, com exportação em PNG/PDF.",
+      "source": "./plugins/carrossel-juridico"
     }
   ]
 }
