@@ -110,6 +110,19 @@
       "name": "awesome-design-md",
       "description": "84 DESIGN.md de marcas conhecidas (Stripe, Linear, Apple, Notion, Vercel…) para gerar UI com a linguagem visual escolhida. Conteúdo de VoltAgent/awesome-design-md (MIT).",
       "source": "./plugins/awesome-design-md"
+    },
+    {
+      "name": "image-to-code",
+      "description": "Skill oficial do autor da Taste Skill: gera a imagem de referência do site, analisa e implementa o front-end fiel a ela (image-first). Repositório Leonxlnx/imagegen-skills (MIT).",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Leonxlnx/imagegen-skills.git",
+        "path": "skills"
+      },
+      "strict": false,
+      "skills": [
+        "./image-to-code"
+      ]
     }
   ]
 }
